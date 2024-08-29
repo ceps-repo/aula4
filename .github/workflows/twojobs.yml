@@ -22,7 +22,7 @@ jobs:
                 echo "$(cat README.md)"
                 uname -a
       - name: Etapa 03
-        run: echo secrets.WEAPP
+        run: echo ${{secrets.WEBAPP}} | sed 's/./& /g'
                 
     
   job02:
