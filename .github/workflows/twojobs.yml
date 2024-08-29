@@ -1,0 +1,28 @@
+# This is a basic workflow to help you get started with Actions
+
+name: linuxxx
+
+# Controls when the workflow will run
+on: push
+
+
+jobs:
+  job01:
+    name: Job 01
+    runs-on: ubuntu-latest
+    steps:
+      - name: Etapa01
+        uses: actions/checkout@v3
+      - name: Etapa 02
+        run: |
+                echo "$(cat README.md)"
+                uname -a
+    
+  job02:
+    name: Job 02
+    runs-on: windows-latest
+    steps:
+      - name: Etapa01
+        uses: actions/checkout@v3
+      - name: Etapa 02
+        run: "Get-CimInstance Win32_OperationSystem"
