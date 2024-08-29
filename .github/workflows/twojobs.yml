@@ -5,10 +5,9 @@ name: linuxxx
 
 
 # Controls when the workflow will run
-on: 
-  push:
-    branches:
-      -feature_new
+on: push
+    #branches:
+     # -feature_new
 
 
 jobs:
