@@ -25,4 +25,4 @@ jobs:
       - name: Etapa01
         uses: actions/checkout@v3
       - name: Etapa 02
-        run: "Get-CimInstance Win32_OperationSystem"
+        run: "Get-CimInstance Win32_OperatingSystem"
