@@ -2,6 +2,8 @@
 
 name: linuxxx
 
+
+
 # Controls when the workflow will run
 on: 
   push:
@@ -20,6 +22,9 @@ jobs:
         run: |
                 echo "$(cat README.md)"
                 uname -a
+      - name: Etapa 03
+        run: echo secrets.WEAPP
+                
     
   job02:
     name: Job 02
